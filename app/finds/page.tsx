@@ -7,7 +7,6 @@ const query = `*[_type == "find" && defined(slug.current)] | order(_createdAt de
   "imageUrl": image.asset->url, "venue": locations[0]->name
 }`
 
-export const revalidate = 60
 
 export default async function AllFindsPage() {
   const finds = await sanityClient.fetch<FindCardData[]>(query)

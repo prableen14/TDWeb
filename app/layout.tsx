@@ -1,19 +1,15 @@
+import type {Metadata} from 'next'
+import {Manrope} from 'next/font/google'
+import Header from '../components/Header'
 import {getSiteUrl} from '@/lib/site-url'
-// import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
-// import "./globals.css";
+import './globals.css'
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-manrope',
+})
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
-// const siteUrl = getSiteUrl()
+const siteUrl = getSiteUrl()
 
 export const metadata: Metadata = {
   ...(siteUrl ? {metadataBase: new URL(siteUrl)} : {}),
@@ -33,13 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {card: 'summary_large_image'},
   robots: {index: Boolean(siteUrl), follow: Boolean(siteUrl)},
-};
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
   return (
     <html lang="en">
       <body className={manrope.variable}>
@@ -47,5 +39,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  );
+  )
 }

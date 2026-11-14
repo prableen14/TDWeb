@@ -1,0 +1,185 @@
+
+{
+  "brands": [
+    {
+      "name": "A&W Canada",
+      "slug": "a-and-w-canada",
+      "website": "https://web.aw.ca",
+      "alt": "A&W Canada brand logo"
+    },
+    {
+      "name": "Burger King",
+      "slug": "burger-king",
+      "website": "https://www.burgerking.ca",
+      "alt": "Burger King brand logo"
+    },
+    {
+      "name": "Wendy's",
+      "slug": "wendys",
+      "website": "https://www.wendys.com",
+      "alt": "Wendy's brand logo"
+    },
+    {
+      "name": "Popeyes",
+      "slug": "popeyes",
+      "website": "https://www.popeyeschicken.ca",
+      "alt": "Popeyes brand logo"
+    },
+    {
+      "name": "Chick-fil-A",
+      "slug": "chick-fil-a",
+      "website": "https://www.chick-fil-a.ca",
+      "alt": "Chick-fil-A brand logo"
+    },
+    {
+      "name": "Pizza Pizza",
+      "slug": "pizza-pizza",
+      "website": "https://www.pizzapizza.ca",
+      "alt": "Pizza Pizza brand logo"
+    },
+    {
+      "name": "Domino's Pizza",
+      "slug": "dominos-pizza",
+      "website": "https://www.dominos.ca",
+      "alt": "Domino's Pizza brand logo"
+    },
+    {
+      "name": "Subway",
+      "slug": "subway",
+      "website": "https://www.subway.com/en-ca",
+      "alt": "Subway brand logo"
+    },
+    {
+      "name": "Chipotle",
+      "slug": "chipotle",
+      "website": "https://www.chipotle.ca",
+      "alt": "Chipotle Mexican Grill logo"
+    },
+    {
+      "name": "Jollibee",
+      "slug": "jollibee",
+      "website": "https://www.jollibeecanada.com",
+      "alt": "Jollibee restaurant logo"
+    },
+    {
+      "name": "Loblaws",
+      "slug": "loblaws",
+      "website": "https://www.loblaws.ca",
+      "alt": "Loblaws grocery store logo"
+    },
+    {
+      "name": "No Frills",
+      "slug": "no-frills",
+      "website": "https://www.nofrills.ca",
+      "alt": "No Frills grocery store logo"
+    },
+    {
+      "name": "Metro",
+      "slug": "metro",
+      "website": "https://www.metro.ca",
+      "alt": "Metro grocery store logo"
+    },
+    {
+      "name": "Food Basics",
+      "slug": "food-basics",
+      "website": "https://www.foodbasics.ca",
+      "alt": "Food Basics grocery store logo"
+    },
+    {
+      "name": "Farm Boy",
+      "slug": "farm-boy",
+      "website": "https://www.farmboy.ca",
+      "alt": "Farm Boy grocery store logo"
+    },
+    {
+      "name": "Longo's",
+      "slug": "longos",
+      "website": "https://www.longos.com",
+      "alt": "Longo's grocery store logo"
+    },
+    {
+      "name": "Rabba Fine Foods",
+      "slug": "rabba-fine-foods",
+      "website": "https://www.rabba.com",
+      "alt": "Rabba Fine Foods logo"
+    },
+    {
+      "name": "LCBO",
+      "slug": "lcbo",
+      "website": "https://www.lcbo.com",
+      "alt": "LCBO logo"
+    },
+    {
+      "name": "Yorkdale Shopping Centre",
+      "slug": "yorkdale-shopping-centre",
+      "website": "https://yorkdale.com",
+      "alt": "Yorkdale Shopping Centre logo"
+    },
+    {
+      "name": "CF Toronto Eaton Centre",
+      "slug": "cf-toronto-eaton-centre",
+      "website": "https://shops.cadillacfairview.com/property/cf-toronto-eaton-centre",
+      "alt": "CF Toronto Eaton Centre logo"
+    },
+    {
+      "name": "Square One Shopping Centre",
+      "slug": "square-one-shopping-centre",
+      "website": "https://shopsquareone.com",
+      "alt": "Square One Shopping Centre logo"
+    },
+    {
+      "name": "Vaughan Mills",
+      "slug": "vaughan-mills",
+      "website": "https://www.vaughanmills.com",
+      "alt": "Vaughan Mills shopping centre logo"
+    },
+    {
+      "name": "Toronto Premium Outlets",
+      "slug": "toronto-premium-outlets",
+      "website": "https://www.premiumoutlets.com/outlet/toronto",
+      "alt": "Toronto Premium Outlets logo"
+    },
+    {
+      "name": "CN Tower",
+      "slug": "cn-tower",
+      "website": "https://www.cntower.ca",
+      "alt": "CN Tower logo"
+    },
+    {
+      "name": "Royal Ontario Museum",
+      "slug": "royal-ontario-museum",
+      "website": "https://www.rom.on.ca",
+      "alt": "Royal Ontario Museum logo"
+    },
+    {
+      "name": "Art Gallery of Ontario",
+      "slug": "art-gallery-of-ontario",
+      "website": "https://ago.ca",
+      "alt": "Art Gallery of Ontario logo"
+    },
+    {
+      "name": "Ripley's Aquarium of Canada",
+      "slug": "ripleys-aquarium-of-canada",
+      "website": "https://www.ripleyaquariums.com/canada",
+      "alt": "Ripley's Aquarium of Canada logo"
+    },
+    {
+      "name": "Toronto Zoo",
+      "slug": "toronto-zoo",
+      "website": "https://www.torontozoo.com",
+      "alt": "Toronto Zoo logo"
+    },
+    {
+      "name": "Canada's Wonderland",
+      "slug": "canadas-wonderland",
+      "website": "https://www.canadaswonderland.com",
+      "alt": "Canada's Wonderland logo"
+    },
+    {
+      "name": "STACKT Market",
+      "slug": "stackt-market",
+      "website": "https://stacktmarket.com",
+      "alt": "STACKT Market logo"
+    }
+  ]
+}

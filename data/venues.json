@@ -1,0 +1,86 @@
+
+{
+  "venues": [
+    {
+      "name": "CF Toronto Eaton Centre",
+      "slug": "cf-toronto-eaton-centre",
+      "address": "220 Yonge Street",
+      "neighbourhood": "Downtown Yonge",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "Sankofa Square",
+      "slug": "sankofa-square",
+      "address": "1 Dundas Street East",
+      "neighbourhood": "Downtown Yonge",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "Nathan Phillips Square",
+      "slug": "nathan-phillips-square",
+      "address": "100 Queen Street West",
+      "neighbourhood": "Downtown",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "STACKT Market",
+      "slug": "stackt-market",
+      "address": "28 Bathurst Street",
+      "neighbourhood": "Wellington Place",
+      "city": "Toronto",
+      "province": "Ontario",
+      "postalCode": "M5V 0C6"
+    },
+    {
+      "name": "St. Lawrence Market",
+      "slug": "st-lawrence-market",
+      "address": "93 Front Street East",
+      "neighbourhood": "St. Lawrence",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "CN Tower",
+      "slug": "cn-tower",
+      "address": "290 Bremner Boulevard",
+      "neighbourhood": "Entertainment District",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "Ripley's Aquarium of Canada",
+      "slug": "ripleys-aquarium-of-canada",
+      "address": "288 Bremner Boulevard",
+      "neighbourhood": "Entertainment District",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "Toronto Zoo",
+      "slug": "toronto-zoo",
+      "address": "2000 Meadowvale Road",
+      "neighbourhood": "Rouge",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "Toronto Reference Library",
+      "slug": "toronto-reference-library",
+      "address": "789 Yonge Street",
+      "neighbourhood": "Yorkville",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "Distillery Historic District",
+      "slug": "distillery-historic-district",
+      "address": "55 Mill Street",
+      "neighbourhood": "Distillery District",
+      "city": "Toronto",
+      "province": "Ontario"
+    }
+  ]
+}

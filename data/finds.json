@@ -1,0 +1,104 @@
+
+{
+  "finds": [
+    {
+      "title": "FREE Tim Hortons ELF Holiday Pop-Up",
+      "slug": "tim-hortons-elf-holiday-popup-2026",
+      "type": "freebie",
+      "tags": [
+        "free",
+        "pop-up",
+        "holiday",
+        "food-drinks",
+        "limited-time"
+      ],
+      "brand": "tim-hortons",
+      "locations": [],
+      "summary": "Enjoy free ELF-inspired donut, Timbit, hot chocolate and soup samples at a festive Toronto pop-up.",
+      "startDate": "2026-11-14T11:00:00-05:00",
+      "endDate": "2026-11-15T16:00:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "featured": true,
+      "description": "Tim Hortons is hosting a free ELF-inspired holiday pop-up at 938 Queen Street West in Toronto on November 14 and 15, from 11 AM to 4 PM daily. Visitors can enjoy samples from the holiday menu, including the ELF Chaos Donut, ELF Snowball Timbit, hot chocolate and soup. Holiday photo experiences and TimShop merchandise shopping are also available.",
+      "howToClaim": "Visit 938 Queen Street West, Toronto, between 11 AM and 4 PM on November 14 or 15.",
+      "restrictions": "Samples are available while supplies last. Merchandise purchases are separate.",
+      "sourceUrl": "https://news.prod.loyalty.rbi.digital/en/articles/tim-hortons-hosts-free-holiday-pop-up-event-in-toronto-on-nov-14-15"
+    },
+    {
+      "title": "FREE HarbourFrost Winter Festival",
+      "slug": "harbourfrost-winter-festival-2026",
+      "type": "event",
+      "tags": [
+        "free",
+        "holiday",
+        "festival",
+        "family-friendly",
+        "outdoor"
+      ],
+      "brand": null,
+      "locations": [],
+      "summary": "Celebrate winter at Harbourfront Centre with festive experiences and seasonal programming.",
+      "startDate": "2026-11-20T17:00:00-05:00",
+      "endDate": "2026-12-20T18:00:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "featured": true,
+      "description": "HarbourFrost brings festive winter experiences to Harbourfront Centre at 235 Queens Quay West in Toronto from November 20 to December 20, 2026. The festival offers free general admission and seasonal programming along Toronto's waterfront.",
+      "howToClaim": "Visit Harbourfront Centre during the festival's scheduled operating days and hours.",
+      "restrictions": "Free general admission. Individual activities may have separate charges or booking requirements. Check the official schedule before visiting.",
+      "sourceUrl": "https://harbourfrontcentre.com/whats-on/"
+    },
+    {
+      "title": "FREE Harbourfront Tree Lighting Ceremony",
+      "slug": "harbourfront-tree-lighting-2026",
+      "type": "event",
+      "tags": [
+        "free",
+        "holiday",
+        "family-friendly",
+        "outdoor"
+      ],
+      "brand": null,
+      "locations": [],
+      "summary": "Celebrate the holiday season at Harbourfront Centre's waterfront tree lighting ceremony.",
+      "startDate": "2026-11-20T18:45:00-05:00",
+      "endDate": null,
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "featured": true,
+      "description": "Harbourfront Centre is hosting Light Up the Night, a free holiday tree lighting ceremony on Friday, November 20, 2026, beginning at 6:45 PM. Celebrate the holiday season by Toronto's waterfront.",
+      "howToClaim": "Visit Harbourfront Centre at 235 Queens Quay West, Toronto, for the ceremony at 6:45 PM.",
+      "restrictions": "Check the organizer's official listing for schedule changes.",
+      "sourceUrl": "https://harbourfrontcentre.com/whats-on/"
+    },
+    {
+      "title": "Salon du Chocolat Toronto 2026",
+      "slug": "salon-du-chocolat-toronto-2026",
+      "type": "food",
+      "tags": [
+        "festival",
+        "food-drinks",
+        "family-friendly",
+        "art-culture"
+      ],
+      "brand": null,
+      "locations": [],
+      "summary": "Explore chocolate creations, pastry demonstrations, workshops and the Chocolate Fashion Show.",
+      "startDate": "2026-11-19T18:30:00-05:00",
+      "endDate": "2026-11-22T17:00:00-05:00",
+      "isFree": false,
+      "price": "Paid admission; ticket prices vary",
+      "admissionType": "paid",
+      "bookingType": "tickets",
+      "featured": true,
+      "description": "Salon du Chocolat Toronto takes place November 19–22, 2026, at the Toronto Congress Centre, 650 Dixon Road. The festival features chocolate and pastry exhibitors, chef demonstrations, interactive workshops and the Chocolate Fashion Show. Programming and access vary by day and ticket type.",
+      "howToClaim": "Purchase admission through the official Salon du Chocolat Toronto website. Reserve workshops separately when required.",
+      "restrictions": "Tickets required. Some workshops cost extra. Children under six may enter free but still require a ticket for capacity tracking.",
+      "sourceUrl": "https://torontosalonduchocolat.com/"
+    }
+  ]
+}

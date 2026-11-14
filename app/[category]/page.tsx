@@ -17,7 +17,6 @@ const query = `*[_type == "find" && defined(slug.current) && type == $type] | or
   "imageUrl": image.asset->url, "venue": locations[0]->name
 }`
 
-export const revalidate = 60
 
 export function generateStaticParams() {
   return Object.keys(categories).map((category) => ({category}))

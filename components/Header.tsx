@@ -20,9 +20,9 @@ export default function Header() {
           <Link href="/food">Food</Link>
         </nav>
 
-        <button className="rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white">
+        <Link href="/near-me" className="rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white">
           📍 Near Me
-        </button>
+        </Link>
 
       </div>
     </header>

@@ -18,6 +18,7 @@ export default function Header() {
           <Link href="/events">Events</Link>
           <Link href="/things-to-do">Things To Do</Link>
           <Link href="/food">Food</Link>
+          <Link href="/for-brands" className="font-semibold">For Brands</Link>
         </nav>
 
         <Link href="/near-me" className="rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white">

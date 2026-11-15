@@ -1,0 +1,36 @@
+{
+  "venues": [
+    {
+      "name": "Harbourfront Centre",
+      "slug": "harbourfront-centre",
+      "address": "235 Queens Quay West",
+      "neighbourhood": "Waterfront",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "Toronto Congress Centre",
+      "slug": "toronto-congress-centre",
+      "address": "650 Dixon Road",
+      "neighbourhood": "Etobicoke",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "Toronto Botanical Garden",
+      "slug": "toronto-botanical-garden",
+      "address": "777 Lawrence Avenue East",
+      "neighbourhood": "North York",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "George Brown College Waterfront Campus",
+      "slug": "george-brown-waterfront",
+      "address": "51 Dockside Drive",
+      "neighbourhood": "Waterfront",
+      "city": "Toronto",
+      "province": "Ontario"
+    }
+  ]
+}

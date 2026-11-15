@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   },
   description: 'Discover Toronto and GTA freebies, local deals, pop-ups, events, food offers and things to do. Explore verified details and official sources.',
   applicationName: 'Toronto Finds',
+  icons: {icon: '/logo_TDiscounts.png', apple: '/logo_TDiscounts.png'},
   openGraph: {
     type: 'website',
     locale: 'en_CA',

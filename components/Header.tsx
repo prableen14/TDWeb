@@ -18,7 +18,7 @@ export default function Header() {
           <Link href="/deals">Deals</Link>
           <Link href="/freebies">Freebies</Link>
           <Link href="/events">Events</Link>
-          <Link href="/things-to-do">Things To Do</Link>
+          <Link href="/pop-ups">Pop-Ups</Link>
           <Link href="/food">Food</Link>
           <Link href="/for-brands" className="font-semibold">For Brands</Link>
         </nav>

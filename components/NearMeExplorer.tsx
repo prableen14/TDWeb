@@ -7,7 +7,7 @@ import NearMeMap from './NearMeMap'
 type Venue = {name?: string; address?: string; city?: string; neighbourhood?: string; lat?: number; lng?: number}
 export type NearbyFind = {
   _id: string; title: string; slug: string; type?: string; summary?: string
-  isFree?: boolean; price?: string; startDate?: string; endDate?: string; imageUrl?: string; imageAlt?: string; venues?: (Venue | null)[]
+  isFree?: boolean; price?: string; startDate?: string; endDate?: string; imageUrl?: string; imageAlt?: string; tags?: string[]; venues?: (Venue | null)[]
 }
 type Point = {lat: number; lng: number}
 type Match = {find: NearbyFind; venue: Venue; distance: number; key: string}
@@ -25,7 +25,7 @@ const presets: Record<string, Point> = {
 }
 const categoryLabels: Record<string,string> = {
   all: 'All Finds', freebie: 'Freebies', deal: 'Deals', event: 'Events',
-  food: 'Food & Drinks', 'things-to-do': 'Things To Do',
+  food: 'Food & Drinks', 'things-to-do': 'Things To Do', 'pop-up': 'Pop-Ups',
 }
 function distanceKm(a: Point, b: Point) {
   const radians = (n: number) => n * Math.PI / 180
@@ -46,7 +46,7 @@ export default function NearMeExplorer({finds}: {finds: NearbyFind[]}) {
   const matches = useMemo(() => {
     const rows: Match[] = []
     for (const find of finds) {
-      if (category !== 'all' && find.type !== category) continue
+      if (category !== 'all' && find.type !== category && !(category === 'pop-up' && find.tags?.includes('pop-up'))) continue
       for (const [index,venue] of (find.venues || []).entries()) {
         if (!venue || typeof venue.lat !== 'number' || typeof venue.lng !== 'number') continue
         const distance = distanceKm(origin,{lat:venue.lat,lng:venue.lng})

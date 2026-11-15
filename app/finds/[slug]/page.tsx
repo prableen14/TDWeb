@@ -56,6 +56,7 @@ const categoryNames: Record<string, string> = {
   event: 'Events',
   food: 'Food & Drinks',
   'things-to-do': 'Things To Do',
+  'pop-up': 'Pop-Ups',
 }
 const categoryPaths: Record<string, string> = {
   freebie: '/freebies',
@@ -63,6 +64,7 @@ const categoryPaths: Record<string, string> = {
   event: '/events',
   food: '/food',
   'things-to-do': '/things-to-do',
+  'pop-up': '/pop-ups',
 }
 const bookingNames: Record<string, string> = {
   'walk-in': 'Walk-in',

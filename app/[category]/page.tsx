@@ -10,9 +10,10 @@ const categories = {
   events: {type: 'event', title: 'Events in Toronto', description: 'Explore upcoming events, pop-ups, and festivals.'},
   food: {type: 'food', title: 'Food & Drinks', description: 'Discover food offers, openings, and tasty finds.'},
   'things-to-do': {type: 'things-to-do', title: 'Things To Do', description: 'Find experiences and activities across Toronto & the GTA.'},
+  'pop-ups': {type: 'pop-up', title: 'Pop-Ups in Toronto & the GTA', description: 'Explore upcoming brand activations, sampling pop-ups, limited-time experiences and launches in Toronto & the GTA.'},
 } as const
 
-const query = `*[_type == "find" && defined(slug.current) && type == $type && (!defined(endDate) || dateTime(endDate) >= dateTime(now()))] | order(startDate desc, _createdAt desc)[0...60] {
+const query = `*[_type == "find" && defined(slug.current) && (type == $type || ($type == "pop-up" && "pop-up" in tags)) && (!defined(endDate) || dateTime(endDate) >= dateTime(now()))] | order(startDate desc, _createdAt desc)[0...60] {
   _id, title, "slug": slug.current, type, summary, isFree, price, startDate,
   "imageUrl": coalesce(image.asset->url, brand->image.asset->url, locations[0]->image.asset->url),
   "imageAlt": select(defined(image.asset) => image.alt, defined(brand->image.asset) => brand->image.alt, defined(locations[0]->image.asset) => locations[0]->image.alt, null), "venue": locations[0]->name
@@ -26,7 +27,7 @@ export function generateStaticParams() {
 export async function generateMetadata({params}: {params: Promise<{category: string}>}): Promise<Metadata> {
   const {category} = await params
   const info = categories[category as keyof typeof categories]
-  return {title: info ? `${info.title} | Toronto Finds` : 'Not found', description: info?.description}
+  return {title: info ? info.title : 'Not found', description: info?.description, alternates: {canonical: `/${category}`}}
 }
 
 export default async function CategoryPage({params}: {params: Promise<{category: string}>}) {

@@ -36,6 +36,7 @@ export const findType = defineType({
           {title: 'Event', value: 'event'},
           {title: 'Food & Drinks', value: 'food'},
           {title: 'Things To Do', value: 'things-to-do'},
+          {title: 'Pop-Up', value: 'pop-up'},
         ],
         layout: 'radio',
       },

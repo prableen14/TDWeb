@@ -10,7 +10,7 @@ const query = `*[_type == "find" && defined(slug.current)] | order(_updatedAt de
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const origin = getSiteUrl()
   if (!origin) return []
-  const staticPaths = ['/', '/freebies', '/deals', '/events', '/food', '/things-to-do', '/finds']
+  const staticPaths = ['/', '/freebies', '/deals', '/events', '/food', '/pop-ups', '/things-to-do', '/finds']
   const staticEntries: MetadataRoute.Sitemap = staticPaths.map((path) => ({
     url: new URL(path, origin).toString(),
     changeFrequency: path === '/' ? 'daily' : 'weekly',

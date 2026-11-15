@@ -21,7 +21,7 @@ const categories = [
   {name: 'Deals', emoji: '💰', href: '/deals'},
   {name: 'Events', emoji: '📅', href: '/events'},
   {name: 'Food & Drinks', emoji: '🍜', href: '/food'},
-  {name: 'Things To Do', emoji: '✨', href: '/things-to-do'},
+  {name: 'Pop-Ups', emoji: '🎪', href: '/pop-ups'},
 ]
 
 const findsQuery = `*[
@@ -66,7 +66,7 @@ export default async function Home() {
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-black/60">
-          Discover the latest deals, freebies, events, food and things to do
+          Discover the latest deals, freebies, events, pop-ups and food
           around Toronto & the GTA.
         </p>
 
@@ -173,6 +173,8 @@ export default async function Home() {
                         ? '📅'
                         : find.type === 'food'
                         ? '🍜'
+                        : find.type === 'pop-up'
+                        ? '🎪'
                         : '✨'}
                     </div>
                   )}
@@ -264,13 +266,13 @@ export default async function Home() {
           </Link>
 
           <Link
-            href="/things-to-do"
+            href="/pop-ups"
             className="rounded-2xl bg-[#e7f4e8] p-8 transition hover:shadow-md"
           >
             <div className="mb-5 text-4xl">✨</div>
-            <h3 className="text-2xl font-bold">Things To Do</h3>
+            <h3 className="text-2xl font-bold">Pop-Ups</h3>
             <p className="mt-2 text-sm text-black/60">
-              Explore new experiences and hidden gems.
+              Explore brand activations, limited-time experiences and sampling pop-ups.
             </p>
           </Link>
 

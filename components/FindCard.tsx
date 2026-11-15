@@ -15,7 +15,7 @@ export type FindCardData = {
 }
 
 export default function FindCard({find}: {find: FindCardData}) {
-  const icon = find.type === 'freebie' ? '🎁' : find.type === 'deal' ? '💰' : find.type === 'event' ? '📅' : find.type === 'food' ? '🍜' : '✨'
+  const icon = find.type === 'freebie' ? '🎁' : find.type === 'deal' ? '💰' : find.type === 'event' ? '📅' : find.type === 'food' ? '🍜' : find.type === 'pop-up' ? '🎪' : '✨'
   return (
     <Link href={`/finds/${find.slug}`} className="group overflow-hidden rounded-2xl border border-black/10 bg-white transition hover:-translate-y-1 hover:shadow-lg">
       <div className="aspect-[4/3] overflow-hidden bg-neutral-100">

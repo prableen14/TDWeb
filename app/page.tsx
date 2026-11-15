@@ -12,6 +12,7 @@ type Find = {
   price?: string
   startDate?: string
   imageUrl?: string
+  imageAlt?: string
   venue?: string
 }
 
@@ -35,7 +36,8 @@ const findsQuery = `*[
   isFree,
   price,
   startDate,
-  "imageUrl": image.asset->url,
+  "imageUrl": coalesce(image.asset->url, brand->image.asset->url, locations[0]->image.asset->url),
+  "imageAlt": select(defined(image.asset) => image.alt, defined(brand->image.asset) => brand->image.alt, defined(locations[0]->image.asset) => locations[0]->image.alt, null),
   "venue": locations[0]->name
 }`
 
@@ -157,7 +159,7 @@ export default async function Home() {
                   {find.imageUrl ? (
                     <img
                       src={find.imageUrl}
-                      alt={find.title}
+                      alt={find.imageAlt || find.title}
                       className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
                     />
                   ) : (

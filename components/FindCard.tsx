@@ -10,6 +10,7 @@ export type FindCardData = {
   price?: string
   startDate?: string
   imageUrl?: string
+  imageAlt?: string
   venue?: string
 }
 
@@ -19,7 +20,7 @@ export default function FindCard({find}: {find: FindCardData}) {
     <Link href={`/finds/${find.slug}`} className="group overflow-hidden rounded-2xl border border-black/10 bg-white transition hover:-translate-y-1 hover:shadow-lg">
       <div className="aspect-[4/3] overflow-hidden bg-neutral-100">
         {find.imageUrl ? (
-          <img src={find.imageUrl} alt={find.title} className="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
+          <img src={find.imageUrl} alt={find.imageAlt || find.title} className="h-full w-full object-cover transition duration-300 group-hover:scale-105" />
         ) : (
           <div className="flex h-full items-center justify-center text-5xl">{icon}</div>
         )}

@@ -5,7 +5,8 @@ import DateFinds, {type TimedFind} from '@/components/DateFinds'
 
 const query = `*[_type == "find" && defined(slug.current) && defined(startDate)] | order(startDate asc)[0...1000] {
   _id,title,"slug":slug.current,type,summary,isFree,admissionType,price,startDate,endDate,
-  "imageUrl":image.asset->url,"venue":locations[0]->name
+  "imageUrl": coalesce(image.asset->url, brand->image.asset->url, locations[0]->image.asset->url),
+  "imageAlt": select(defined(image.asset) => image.alt, defined(brand->image.asset) => brand->image.alt, defined(locations[0]->image.asset) => locations[0]->image.alt, null),"venue":locations[0]->name
 }`
 export default async function Page() {
   let finds:TimedFind[]=[]

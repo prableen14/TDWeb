@@ -106,13 +106,13 @@ export default function NearMeExplorer({finds}: {finds: NearbyFind[]}) {
             <h2 className="mb-4 text-xl font-bold">{matches.length} nearby {matches.length===1?'location':'locations'}</h2>
             {matches.length===0 ? <div className="rounded-2xl border border-black/10 bg-white p-8"><h3 className="font-bold">No mapped Finds in this area yet</h3><p className="mt-2 text-sm text-black/60">Try a wider radius or another GTA area. Finds appear here when their Sanity venue has a map location.</p><Link href="/finds" className="mt-4 inline-block font-semibold underline">Browse all Finds</Link></div> :
               <div className="max-h-[640px] space-y-3 overflow-y-auto pr-1">
-                {matches.map(match=><button key={match.key} onClick={()=>setSelected(match.key)} className={'w-full rounded-2xl border bg-white p-5 text-left transition hover:border-black/50 '+(active?.key===match.key?'border-black shadow-sm':'border-black/10')}>
+                {matches.map(match=><div key={match.key} className={'w-full rounded-2xl border bg-white p-5 text-left transition hover:border-black/50 '+(active?.key===match.key?'border-black shadow-sm':'border-black/10')}>
                   <div className="flex justify-between gap-3"><span className="text-xs font-bold uppercase tracking-wider text-black/50">{categoryLabels[match.find.type||'']||'Find'}</span><span className="text-sm font-semibold">{match.distance.toFixed(1)} km</span></div>
                   <h3 className="mt-2 text-lg font-bold">{match.find.title}</h3>
                   <p className="mt-1 text-sm text-black/60">{[match.venue.name,match.venue.neighbourhood,match.venue.city].filter(Boolean).join(' · ')}</p>
                   {match.find.summary && <p className="mt-2 line-clamp-2 text-sm text-black/65">{match.find.summary}</p>}
-                  <Link href={'/finds/'+encodeURIComponent(match.find.slug)} onClick={e=>e.stopPropagation()} className="mt-3 inline-block text-sm font-bold underline">View details</Link>
-                </button>)}
+                  <Link href={'/finds/'+encodeURIComponent(match.find.slug)} className="mt-3 inline-block text-sm font-bold underline">View details</Link><button type="button" onClick={()=>setSelected(match.key)} className="ml-4 text-sm font-bold underline">Show on map</button>
+                </div>)}
               </div>}
           </section>
           <section aria-label="Map" className="min-w-0">

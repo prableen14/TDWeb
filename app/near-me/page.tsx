@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: {canonical: '/near-me'},
 }
 
-const query = `*[_type == "find" && defined(slug.current) && count(locations[@->location != null]) > 0 && (!defined(endDate) || dateTime(endDate) >= dateTime(now()))][0...1000] {
+const query = `*[_type == "find" && defined(slug.current) && defined(locations) && (!defined(endDate) || dateTime(endDate) >= dateTime(now()))][0...1000] {
   _id, title, "slug": slug.current, type, summary, isFree, price, startDate, endDate,
   "venues": locations[]->{name, address, city, neighbourhood, "lat": location.lat, "lng": location.lng}
 }`

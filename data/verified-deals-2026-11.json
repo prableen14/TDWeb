@@ -1,0 +1,156 @@
+{
+  "finds": [
+    {
+      "title": "Harvey's $3 Original or Veggie Burger — First App Order",
+      "slug": "harveys-three-dollar-first-app-burger-2026",
+      "type": "deal",
+      "tags": [
+        "restaurant",
+        "app-deal",
+        "burger",
+        "vegetarian-option"
+      ],
+      "locations": [],
+      "summary": "Get an Original or Veggie Burger for $3 on your first Harvey's app order using code 3BURGER.",
+      "isFree": false,
+      "price": "$3 plus tax and extras",
+      "admissionType": "paid",
+      "bookingType": "walk-in",
+      "description": "Harvey's officially advertises a $3 Original or Veggie Burger for first-time orders made through the Harvey's app. The offer is limited-time with no published end date; check the app before ordering.",
+      "howToClaim": "Download the Harvey's app, sign into a MyHarvey's account, and enter 3BURGER in the Coupons tab before placing your first qualifying app order.",
+      "restrictions": "First app order only. Taxes, cheese and bacon extra. Not valid with delivery or other promotions. Participating locations; offer may end without notice.",
+      "sourceUrl": "https://www.harveys.ca/en/deals.html"
+    },
+    {
+      "title": "Harvey's CAA Members Get 10% Off",
+      "slug": "harveys-caa-members-ten-percent-off-2026",
+      "type": "deal",
+      "tags": [
+        "restaurant",
+        "membership",
+        "discount"
+      ],
+      "locations": [],
+      "summary": "CAA, BCAA and AMA members can get 10% off eligible full-priced Harvey's orders at participating restaurants.",
+      "isFree": false,
+      "price": "10% off eligible full-price items",
+      "admissionType": "paid",
+      "bookingType": "walk-in",
+      "description": "Harvey's confirms a 10% discount for eligible CAA members at participating restaurants, in the app and through direct Harvey's ordering. This is an ongoing benefit with no fixed expiry published.",
+      "howToClaim": "Present a valid CAA/BCAA/AMA card before paying or add your membership number in the Harvey's app and apply the discount.",
+      "restrictions": "Excludes taxes, gift cards, value promotions and coupons; cannot stack with other offers. Not valid through third-party delivery apps. Participating locations only.",
+      "sourceUrl": "https://www.harveys.ca/en/partnerships/caa.html"
+    },
+    {
+      "title": "Harvey's Free Burger Coupon With $25 Gift Card",
+      "slug": "harveys-gift-card-free-burger-january-2027",
+      "type": "deal",
+      "tags": [
+        "restaurant",
+        "gift-card",
+        "holiday"
+      ],
+      "locations": [],
+      "summary": "Buy a $25 Harvey's gift card in-restaurant and receive a coupon for a free Original or Veggie Burger, redeemable in January 2027.",
+      "isFree": false,
+      "price": "$25 gift card purchase required",
+      "admissionType": "free-with-purchase",
+      "bookingType": "walk-in",
+      "description": "Harvey's official website advertises a free Original or Veggie Burger promotional coupon with a qualifying $25 gift card purchased in-restaurant. The burger coupon can be used January 1–31, 2027. Check the full offer conditions and purchase availability with the restaurant.",
+      "howToClaim": "Purchase a qualifying $25 Harvey's gift card in-restaurant and retain the promotional coupon for January 1–31, 2027.",
+      "restrictions": "Requires a gift-card purchase. Burger is not free at purchase; coupon redemption is January 1–31, 2027. Participating restaurants and offer terms apply.",
+      "sourceUrl": "https://www.harveys.ca/"
+    },
+    {
+      "title": "Denny's $5 Bonus Card With Every $25 in Gift Cards",
+      "slug": "dennys-holiday-gift-card-bonus-2026",
+      "type": "deal",
+      "tags": [
+        "restaurant",
+        "gift-card",
+        "holiday"
+      ],
+      "locations": [],
+      "summary": "Buy $25 in Denny's Canada gift cards by December 26 and receive a $5 bonus card for a future dine-in visit.",
+      "startDate": "2026-11-15T00:00:00-05:00",
+      "endDate": "2026-12-26T23:59:00-05:00",
+      "isFree": false,
+      "price": "$25 gift card purchase for $5 bonus",
+      "admissionType": "free-with-purchase",
+      "bookingType": "walk-in",
+      "description": "Denny's Canada confirms a $5 bonus card with every $25 in gift cards purchased in restaurant or online through December 26, 2026. Bonus cards are redeemable January 2–February 28, 2027, for dine-in food and non-alcoholic beverages.",
+      "howToClaim": "Buy qualifying Denny's gift cards online or at a participating restaurant by December 26; keep the bonus card for a dine-in visit January 2–February 28.",
+      "restrictions": "Participating Canadian restaurants only. Bonus card cannot be redeemed before January 2, 2027, combined with other offers, or exchanged for cash/gift cards.",
+      "sourceUrl": "https://www.dennys.ca/promotions/holiday-gift-card-offer-2/"
+    },
+    {
+      "title": "Walmart Canada Black Friday Deals 2026",
+      "slug": "walmart-canada-black-friday-deals-2026",
+      "type": "deal",
+      "tags": [
+        "black-friday",
+        "retail",
+        "shopping",
+        "holiday"
+      ],
+      "locations": [],
+      "summary": "Walmart Canada's Black Friday promotion runs in stages, with online early deals from November 12 and more deals from November 18–19.",
+      "startDate": "2026-11-12T00:00:00-05:00",
+      "endDate": "2026-11-30T23:59:00-05:00",
+      "isFree": false,
+      "price": "Prices vary by item",
+      "admissionType": "paid",
+      "bookingType": "walk-in",
+      "description": "Walmart Canada announced a three-week Black Friday/Cyber Monday event covering electronics, beauty, fashion, toys and home goods. Early deals started online November 12; the next online wave begins November 18 at 9 p.m. ET and in stores November 19. Cyber Monday begins online November 29 at 9 p.m. ET. Individual item prices and availability change.",
+      "howToClaim": "Browse Walmart.ca, the Walmart app, or participating stores during the relevant sale window.",
+      "restrictions": "Specific discounts, inventory, eligibility and availability vary by product, channel and store. Do not assume a universal percentage off.",
+      "sourceUrl": "https://www.walmartcanada.ca/news/2026/10/30/sparking-holiday-cheer--walmart-canada-brings-three-weeks-of-dea"
+    },
+    {
+      "title": "Best Buy Canada Black Friday Sale Starts November 19",
+      "slug": "best-buy-canada-black-friday-november-2026",
+      "type": "deal",
+      "tags": [
+        "black-friday",
+        "electronics",
+        "shopping",
+        "holiday"
+      ],
+      "locations": [],
+      "summary": "Best Buy Canada's 2026 Black Friday sale begins November 19 at noon ET, with Cyber Monday online offers November 30.",
+      "startDate": "2026-11-19T12:00:00-05:00",
+      "endDate": "2026-11-30T23:59:00-05:00",
+      "isFree": false,
+      "price": "Prices vary by product",
+      "admissionType": "paid",
+      "bookingType": "walk-in",
+      "description": "Best Buy Canada announced its Black Friday sale starting Thursday, November 19, 2026 at 12 p.m. Eastern, followed by online Cyber Monday offers November 30. Shop official listings for current product-specific savings.",
+      "howToClaim": "Visit BestBuy.ca or a participating Best Buy Canada store and check live product prices.",
+      "restrictions": "Availability and prices vary; some offers are online-only or member-specific. November 30 is the Cyber Monday date, not a guaranteed end time for every Black Friday offer.",
+      "sourceUrl": "https://www.bestbuy.ca/en-ca/about/holiday-favourites-best-buy/blt364fb9d4922676dc"
+    },
+    {
+      "title": "Canadian Tire Early Black Friday Flyer — November 12–18",
+      "slug": "canadian-tire-early-black-friday-november-12-18-2026",
+      "type": "deal",
+      "tags": [
+        "black-friday",
+        "retail",
+        "home",
+        "shopping"
+      ],
+      "locations": [],
+      "summary": "Canadian Tire's Early Black Friday Week 2 flyer runs November 12–18, featuring select home, appliance, tool and holiday items.",
+      "startDate": "2026-11-12T00:00:00-05:00",
+      "endDate": "2026-11-18T23:59:00-05:00",
+      "isFree": false,
+      "price": "Prices vary by product",
+      "admissionType": "paid",
+      "bookingType": "walk-in",
+      "description": "Canadian Tire's official digital flyer identifies Early Black Friday Week 2 as November 12–18, 2026. Check the flyer for item-level prices, inventory and participating store details.",
+      "howToClaim": "Browse the current Canadian Tire digital flyer and select your local store to confirm pricing and stock.",
+      "restrictions": "Flyer pricing and inventory may vary by store. Specific savings are not guaranteed on every product.",
+      "sourceUrl": "https://digital-flyer.canadiantire.ca/"
+    }
+  ]
+}

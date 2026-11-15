@@ -1,6 +1,6 @@
 'use client'
 
-import {useEffect, useRef} from 'react'
+import {useEffect, useRef, useState} from 'react'
 
 export type MapMarker = {key: string; lat: number; lng: number; title: string; category: string}
 type LeafletMap = {remove:()=>void;fitBounds:(bounds:unknown,options?:unknown)=>void;setView:(coords:[number,number],zoom:number)=>void}
@@ -41,7 +41,8 @@ export default function NearMeMap({markers,center,selectedKey,onSelect}:Props) {
   const api=useRef<LeafletApi|null>(null)
   const drawn=useRef<LeafletMarker[]>([])
   const onSelectRef=useRef(onSelect)
-  const [error,setError]=useStateSafe('')
+  const [error,setError]=useState('')
+  const [ready,setReady]=useState(false)
   onSelectRef.current=onSelect
 
   useEffect(()=>{
@@ -55,7 +56,7 @@ export default function NearMeMap({markers,center,selectedKey,onSelect}:Props) {
         attribution:'&copy; OpenStreetMap contributors',maxZoom:19,
       }).addTo(instance)
       instance.setView([center.lat,center.lng],12)
-      renderMarkers()
+      setReady(true)
     }).catch(()=>{if(!cancelled)setError('Interactive map could not load. Nearby results are still available in the list.')})
     return ()=>{cancelled=true;map.current?.remove();map.current=null;api.current=null;drawn.current=[]}
     // Initialize map only once; subsequent updates handled in the effect below.
@@ -84,12 +85,9 @@ export default function NearMeMap({markers,center,selectedKey,onSelect}:Props) {
   useEffect(()=>{renderMarkers()
     // Render after markers, center, or selected item changes.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[markers,center.lat,center.lng,selectedKey])
+  },[markers,center.lat,center.lng,selectedKey,ready])
   return <div className="relative">
     <div ref={element} className="h-[440px] w-full bg-[#eae8df]" aria-label="Interactive map of nearby Finds" role="region"/>
     {error && <p role="status" className="p-4 text-sm">{error}</p>}
   </div>
 }
-// State wrapper keeps the map's external library lifecycle isolated.
-import {useState} from 'react'
-function useStateSafe(initial:string){return useState(initial)}

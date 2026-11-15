@@ -111,6 +111,12 @@ export const findType = defineType({
       name: 'endDate',
       title: 'End Date & Time',
       type: 'datetime',
+      description: 'Optional. When this time passes, the Find automatically disappears from active website listings. Leave blank for ongoing deals. The published detail page stays available.',
+      validation: (rule) => rule.custom((value, context) => {
+        const start = context.document?.startDate
+        if (value && typeof start === 'string' && new Date(value).getTime() < new Date(start).getTime()) return 'End Date must be after Start Date.'
+        return true
+      }),
     }),
 
     defineField({

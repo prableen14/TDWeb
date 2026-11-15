@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 const query = `*[_type == "find" && defined(slug.current) && defined(locations) && (!defined(endDate) || dateTime(endDate) >= dateTime(now()))][0...1000] {
-  _id, title, "slug": slug.current, type, summary, isFree, price, startDate, endDate,
+  _id, title, "slug": slug.current, type, tags, summary, isFree, price, startDate, endDate,
   "imageUrl": coalesce(image.asset->url, brand->image.asset->url, locations[0]->image.asset->url),
   "imageAlt": select(defined(image.asset) => image.alt, defined(brand->image.asset) => brand->image.alt, defined(locations[0]->image.asset) => locations[0]->image.alt, null),
   "venues": locations[]->{name, address, city, neighbourhood, "lat": location.lat, "lng": location.lng}

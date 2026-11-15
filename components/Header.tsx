@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -7,9 +8,10 @@ export default function Header() {
 
         <Link
           href="/"
-          className="text-xl font-extrabold tracking-tight"
+          className="flex items-center gap-3" aria-label="Toronto Discounts — Home"
         >
-          TORONTO FINDS
+          <Image src="/logo_TDiscounts.png" alt="Toronto Discounts" width={64} height={64} priority className="h-14 w-14 object-contain" />
+          <span className="text-lg font-extrabold tracking-tight">TORONTO FINDS</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

@@ -11,7 +11,7 @@ export default function Header() {
           className="flex items-center gap-3" aria-label="Toronto Discounts — Home"
         >
           <Image src="/logo_TDiscounts.png" alt="Toronto Discounts" width={64} height={64} priority className="h-14 w-14 object-contain" />
-          <span className="text-lg font-extrabold tracking-tight">TORONTO FINDS</span>
+          <span className="text-lg font-extrabold tracking-tight">TORONTO DISCOUNTS</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

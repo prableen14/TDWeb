@@ -14,17 +14,17 @@ const siteUrl = getSiteUrl()
 export const metadata: Metadata = {
   ...(siteUrl ? {metadataBase: new URL(siteUrl)} : {}),
   title: {
-    default: 'Toronto Finds | Freebies, Deals & Events in Toronto & GTA',
-    template: '%s | Toronto Finds',
+    default: 'Toronto Discounts | Freebies, Deals & Events in Toronto & GTA',
+    template: '%s | Toronto Discounts',
   },
   description: 'Discover Toronto and GTA freebies, local deals, pop-ups, events, food offers and things to do. Explore verified details and official sources.',
-  applicationName: 'Toronto Finds',
+  applicationName: 'Toronto Discounts',
   icons: {icon: '/logo_TDiscounts.png', apple: '/logo_TDiscounts.png'},
   openGraph: {
     type: 'website',
     locale: 'en_CA',
-    siteName: 'Toronto Finds',
-    title: 'Toronto Finds | Freebies, Deals & Events in Toronto & GTA',
+    siteName: 'Toronto Discounts',
+    title: 'Toronto Discounts | Freebies, Deals & Events in Toronto & GTA',
     description: 'Discover freebies, deals, events, pop-ups and things to do across Toronto and the GTA.',
     ...(siteUrl ? {url: siteUrl} : {}),
   },

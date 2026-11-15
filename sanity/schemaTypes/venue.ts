@@ -15,6 +15,23 @@ export const venueType = defineType({
     }),
 
     defineField({
+      name: 'image',
+      title: 'Shared Venue Image',
+      type: 'image',
+      description: 'Used automatically for Finds without their own image.',
+      options: {hotspot: true},
+      fields: [
+        defineField({
+          name: 'alt',
+          title: 'Alt Text',
+          type: 'string',
+          description: 'Describe what is actually shown in the image.',
+          validation: (rule) => rule.required(),
+        }),
+      ],
+    }),
+
+    defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',

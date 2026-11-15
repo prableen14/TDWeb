@@ -239,7 +239,7 @@ export default async function Home() {
         <div className="grid gap-4 md:grid-cols-3">
 
           <Link
-            href="/freebies"
+            href="/free-today"
             className="rounded-2xl bg-[#fff1cc] p-8 transition hover:shadow-md"
           >
             <div className="mb-5 text-4xl">🎁</div>
@@ -250,7 +250,7 @@ export default async function Home() {
           </Link>
 
           <Link
-            href="/events"
+            href="/this-weekend"
             className="rounded-2xl bg-[#e8efff] p-8 transition hover:shadow-md"
           >
             <div className="mb-5 text-4xl">📅</div>

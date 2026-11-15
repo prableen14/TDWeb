@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import VenueGeocodeInput from '../components/VenueGeocodeInput'
 
 export const venueType = defineType({
   name: 'venue',
@@ -61,6 +62,7 @@ export const venueType = defineType({
       title: 'Map Location',
       type: 'geopoint',
       description: 'Latitude and longitude used for Near Me results.',
+      components: {input: VenueGeocodeInput},
     }),
   ],
 

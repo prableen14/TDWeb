@@ -1,0 +1,216 @@
+{
+  "finds": [
+    {
+      "title": "HarbourFrost Winter Festival 2026",
+      "slug": "harbourfrost-winter-festival-2026",
+      "type": "event",
+      "tags": [
+        "free",
+        "holiday",
+        "festival",
+        "family-friendly"
+      ],
+      "locations": [
+        "harbourfront-centre"
+      ],
+      "summary": "Free admission to Harbourfront Centre's waterfront winter festival; some related activities may cost extra.",
+      "startDate": "2026-11-20T00:00:00-05:00",
+      "endDate": "2026-12-20T23:59:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "HarbourFrost runs November 20 through December 20 at Harbourfront Centre. Enjoy festive programming, seasonal markets and waterfront experiences. Free general admission; individual activities may charge fees.",
+      "howToClaim": "Visit Harbourfront Centre and check the official daily programme before attending.",
+      "restrictions": "Festival hours and activity schedules vary by day. Related activities may not be free.",
+      "sourceUrl": "https://harbourfrontcentre.com/whats-on/"
+    },
+    {
+      "title": "Light Up the Night: Harbourfront Tree Lighting",
+      "slug": "harbourfront-tree-lighting-2026",
+      "type": "event",
+      "tags": [
+        "free",
+        "holiday",
+        "family-friendly"
+      ],
+      "locations": [
+        "harbourfront-centre"
+      ],
+      "summary": "Free waterfront holiday tree lighting at Harbourfront Centre on November 20 at 6:45 p.m.",
+      "startDate": "2026-11-20T18:45:00-05:00",
+      "endDate": null,
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "Harbourfront Centre lists its Light Up the Night tree lighting ceremony for Friday November 20, 2026 at 6:45 p.m.",
+      "howToClaim": "Attend the tree lighting at Harbourfront Centre; check the organizer's programme before travelling.",
+      "sourceUrl": "https://harbourfrontcentre.com/whats-on/"
+    },
+    {
+      "title": "HarbourFrost Makers Market",
+      "slug": "harbourfrost-makers-market-2026",
+      "type": "event",
+      "tags": [
+        "free",
+        "holiday",
+        "market",
+        "shopping"
+      ],
+      "locations": [
+        "harbourfront-centre"
+      ],
+      "summary": "Browse handmade gifts, jewellery, ceramics and other artisan creations at Harbourfront Centre.",
+      "startDate": "2026-11-20T15:00:00-05:00",
+      "endDate": null,
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "Harbourfront Centre lists the Makers Market beginning Friday November 20 at 3 p.m. Admission is free, but goods and related activities may cost extra.",
+      "restrictions": "This listing is for the November 20 opening; check the official programme for subsequent dates and hours.",
+      "sourceUrl": "https://harbourfrontcentre.com/whats-on/"
+    },
+    {
+      "title": "The Distillery Winter Village 2026",
+      "slug": "distillery-winter-village-2026",
+      "type": "event",
+      "tags": [
+        "holiday",
+        "market",
+        "family-friendly",
+        "shopping"
+      ],
+      "locations": [
+        "distillery-historic-district"
+      ],
+      "summary": "Explore the Distillery District's holiday village November 12–January 3; free entry at selected times.",
+      "startDate": "2026-11-12T00:00:00-05:00",
+      "endDate": "2027-01-03T23:59:00-05:00",
+      "isFree": false,
+      "price": "Free at selected times; tickets required during ticketed hours",
+      "admissionType": "paid",
+      "bookingType": "tickets",
+      "description": "The Distillery Winter Village runs November 12, 2026 through January 3, 2027, with festive vendors, lights and entertainment. Tickets are required from 4 p.m. Friday–Sunday, Thursdays in December, and daily December 14–31, plus opening night. Entry is free at other non-ticketed times, including Monday–Wednesday through December 13.",
+      "howToClaim": "Arrive before ticketed hours for free admission, or purchase admission for ticketed periods on the official website.",
+      "restrictions": "On days ticketing starts at 4 p.m., visitors must enter before 4 p.m. for free admission. Verify the daily schedule before visiting.",
+      "sourceUrl": "https://thedistillerywintervillage.com/schedule"
+    },
+    {
+      "title": "Cavalcade of Lights 2026",
+      "slug": "cavalcade-of-lights-2026",
+      "type": "event",
+      "tags": [
+        "free",
+        "holiday",
+        "family-friendly",
+        "outdoor"
+      ],
+      "locations": [
+        "nathan-phillips-square"
+      ],
+      "summary": "Free holiday lights and skating at Nathan Phillips Square from November 28 to January 7.",
+      "startDate": "2026-11-28T18:00:00-05:00",
+      "endDate": "2027-01-07T23:59:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "Cavalcade of Lights begins November 28, 2026, with opening-night live music from 6 p.m. and the official tree-lighting at 6:30 p.m. The light installations continue through January 7, 2027 at Nathan Phillips Square.",
+      "restrictions": "Opening-night programme and skating availability can vary. Check official details before travelling.",
+      "sourceUrl": "https://www.destinationtoronto.com/events/annual-festivals-and-events/cavalcade-of-lights/"
+    },
+    {
+      "title": "Salon du Chocolat Toronto 2026",
+      "slug": "salon-du-chocolat-toronto-2026",
+      "type": "food",
+      "tags": [
+        "festival",
+        "food-drinks",
+        "art-culture"
+      ],
+      "locations": [
+        "toronto-congress-centre"
+      ],
+      "summary": "Chocolate and pastry festival with demonstrations, exhibitors, workshops and a fashion show, November 19–22.",
+      "startDate": "2026-11-19T18:30:00-05:00",
+      "endDate": "2026-11-22T17:00:00-05:00",
+      "isFree": false,
+      "price": "Ticketed event; prices vary by admission and workshop",
+      "admissionType": "paid",
+      "bookingType": "tickets",
+      "description": "Salon du Chocolat Toronto runs November 19–22 at Toronto Congress Centre. The official programme lists an inaugural night November 19, festival programming November 20–22, pastry demonstrations and chocolate fashion shows.",
+      "howToClaim": "Check official admission and workshop tickets before visiting.",
+      "restrictions": "Workshops and special sessions may require separate booking. Schedule varies by day.",
+      "sourceUrl": "https://torontosalonduchocolat.com/Program"
+    },
+    {
+      "title": "Toronto Botanical Garden Holiday EcoMarket 2026",
+      "slug": "toronto-botanical-garden-holiday-ecomarket-2026",
+      "type": "event",
+      "tags": [
+        "free",
+        "holiday",
+        "market",
+        "shopping",
+        "family-friendly"
+      ],
+      "locations": [
+        "toronto-botanical-garden"
+      ],
+      "summary": "Free-entry holiday eco-market with local vendors, crafts and seasonal activities on two weekends.",
+      "startDate": "2026-11-20T00:00:00-05:00",
+      "endDate": "2026-12-20T23:59:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "The Toronto Botanical Garden Holiday EcoMarket takes place November 20–22 and December 18–20, 2026 at 777 Lawrence Avenue East. Browse environmentally minded vendors, seasonal greenery and family activities.",
+      "restrictions": "Only November 20–22 and December 18–20 are event dates, not every day in between. Specific sessions and purchases may have charges. Check organizer hours.",
+      "sourceUrl": "https://www.destinationontario.com/en-ca/articles/festive-holiday-markets-ontario"
+    },
+    {
+      "title": "Swedish Christmas Fair 2026",
+      "slug": "swedish-christmas-fair-toronto-2026",
+      "type": "event",
+      "tags": [
+        "free",
+        "holiday",
+        "market",
+        "family-friendly"
+      ],
+      "locations": [
+        "george-brown-waterfront"
+      ],
+      "summary": "Free-admission Swedish Christmas fair November 21–22 with food, crafts and cultural traditions.",
+      "startDate": "2026-11-21T00:00:00-05:00",
+      "endDate": "2026-11-22T23:59:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "The Swedish Christmas Fair is held November 21–22, 2026 at George Brown College Waterfront Campus, 51 Dockside Drive. The fair features Swedish crafts, food and cultural celebrations.",
+      "restrictions": "Admission is free; food and merchandise cost extra. Check organizer hours.",
+      "sourceUrl": "https://www.destinationontario.com/en-ca/articles/festive-holiday-markets-ontario"
+    },
+    {
+      "title": "Holiday Hills at STACKT 2026",
+      "slug": "holiday-hills-stackt-2026",
+      "type": "event",
+      "tags": [
+        "holiday",
+        "market",
+        "shopping",
+        "family-friendly"
+      ],
+      "locations": [
+        "stackt-market"
+      ],
+      "summary": "Seasonal holiday programming, pop-ups and shopping at STACKT Market through January 3.",
+      "startDate": "2026-11-13T00:00:00-05:00",
+      "endDate": "2027-01-03T23:59:00-05:00",
+      "isFree": false,
+      "price": "Entry and activity costs vary",
+      "admissionType": "paid",
+      "bookingType": "walk-in",
+      "description": "Holiday Hills brings seasonal retail, rotating pop-ups, entertainment and family activities to STACKT Market at 28 Bathurst Street November 13 through January 3. Check the programme for individual activities and admission conditions.",
+      "restrictions": "Not all experiences are free; some require purchases or reservations. Hours vary.",
+      "sourceUrl": "https://www.destinationontario.com/en-ca/articles/festive-holiday-markets-ontario"
+    }
+  ]
+}

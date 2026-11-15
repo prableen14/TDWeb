@@ -118,7 +118,7 @@ export default function ForBrandsPage() {
           {/* Hero image: add your own photo to public/brands-hero.jpg to replace the placeholder.
               The dark overlay keeps the caption readable on top of any photo. */}
           <div
-            className="relative isolate flex min-h-[390px] overflow-hidden rounded-[2rem] border border-[#ffc400]/35 bg-[#130c06] shadow-2xl sm:min-h-[470px] lg:min-h-[530px]"
+            className="relative isolate flex min-h-[390px] overflow-hidden rounded-[2rem] bg-[#130c06] shadow-2xl sm:min-h-[470px] lg:min-h-[530px]"
             style={{
               backgroundImage: "linear-gradient(180deg, rgba(0,0,0,.10) 0%, rgba(0,0,0,.22) 40%, rgba(0,0,0,.90) 100%), url('/brands-hero.jpg'), radial-gradient(circle at 50% 35%, #603000 0%, #1c1107 50%, #080808 85%)",
               backgroundPosition: 'center',
@@ -126,7 +126,6 @@ export default function ForBrandsPage() {
               backgroundRepeat: 'no-repeat',
             }}
           >
-            <div className="absolute inset-3 rounded-[1.6rem] border border-[#ffc400]/40 sm:inset-4" aria-hidden="true" />
             <div className="relative z-10 mt-auto px-7 pb-9 pt-24 sm:px-10 sm:pb-12">
               <p className="text-xs font-extrabold uppercase tracking-[.12em] text-[#ffc400]">@torontodiscounts</p>
               <p className="mt-4 max-w-lg text-3xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-4xl lg:text-5xl">Discover what’s happening in Toronto.</p>

@@ -1,0 +1,44 @@
+{
+  "venues": [
+    {
+      "name": "Museum of Contemporary Art Toronto",
+      "slug": "moca-toronto",
+      "address": "158 Sterling Road",
+      "neighbourhood": "Junction Triangle",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "Royal Ontario Museum",
+      "slug": "royal-ontario-museum",
+      "address": "100 Queens Park",
+      "neighbourhood": "Bloor-Yorkville",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "Anga's Farm & Nursery",
+      "slug": "angas-farm-nursery",
+      "address": "89 Bankfield Drive",
+      "neighbourhood": "North Etobicoke",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "The Junction",
+      "slug": "the-junction-toronto",
+      "address": "Dundas Street West",
+      "neighbourhood": "The Junction",
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    {
+      "name": "St. Lawrence Market",
+      "slug": "st-lawrence-market",
+      "address": "93 Front Street East",
+      "neighbourhood": "St. Lawrence",
+      "city": "Toronto",
+      "province": "Ontario"
+    }
+  ]
+}

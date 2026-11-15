@@ -1,0 +1,185 @@
+{
+  "finds": [
+    {
+      "title": "Free Friday Night at MOCA — December 4",
+      "slug": "moca-free-friday-night-december-4-2026",
+      "type": "freebie",
+      "tags": [
+        "free",
+        "art-culture",
+        "museum"
+      ],
+      "locations": [
+        "moca-toronto"
+      ],
+      "summary": "Visit the Museum of Contemporary Art Toronto free on Friday evening, December 4.",
+      "startDate": "2026-12-04T17:00:00-05:00",
+      "endDate": "2026-12-04T20:00:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "MOCA's official events calendar lists Free Friday Night on December 4, 2026 from 5 to 8 p.m. Check the museum for access conditions and exhibitions.",
+      "howToClaim": "Check MOCA's official event calendar before visiting.",
+      "sourceUrl": "https://moca.ca/events/"
+    },
+    {
+      "title": "Art Hive at MOCA — November 27",
+      "slug": "moca-art-hive-november-27-2026",
+      "type": "freebie",
+      "tags": [
+        "free",
+        "art-culture",
+        "workshop"
+      ],
+      "locations": [
+        "moca-toronto"
+      ],
+      "summary": "Free Art Hive creative session at MOCA on Friday November 27, 5–8 p.m.",
+      "startDate": "2026-11-27T17:00:00-05:00",
+      "endDate": "2026-11-27T20:00:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "The Museum of Contemporary Art Toronto lists its free Art Hive programme for November 27, 2026, from 5 to 8 p.m.",
+      "howToClaim": "Review MOCA's official listing for any participation or capacity details.",
+      "sourceUrl": "https://moca.ca/events/"
+    },
+    {
+      "title": "Art Hive at MOCA — December 11",
+      "slug": "moca-art-hive-december-11-2026",
+      "type": "freebie",
+      "tags": [
+        "free",
+        "art-culture",
+        "workshop"
+      ],
+      "locations": [
+        "moca-toronto"
+      ],
+      "summary": "Free Art Hive creative session at MOCA on Friday December 11, 5–8 p.m.",
+      "startDate": "2026-12-11T17:00:00-05:00",
+      "endDate": "2026-12-11T20:00:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "The Museum of Contemporary Art Toronto lists its free Art Hive programme for December 11, 2026, from 5 to 8 p.m.",
+      "howToClaim": "Review MOCA's official listing for any participation or capacity details.",
+      "sourceUrl": "https://moca.ca/events/"
+    },
+    {
+      "title": "Window Wonderland — Free Junction Art Walk",
+      "slug": "window-wonderland-junction-2026-2027",
+      "type": "things-to-do",
+      "tags": [
+        "free",
+        "art-culture",
+        "outdoor",
+        "holiday"
+      ],
+      "locations": [
+        "the-junction-toronto"
+      ],
+      "summary": "Explore free augmented-reality storefront windows and murals in Toronto's Junction neighbourhood.",
+      "startDate": "2026-11-27T00:00:00-05:00",
+      "endDate": "2027-01-31T23:59:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "Window Wonderland is a free self-guided outdoor art walk in the Junction, November 27, 2026 to January 31, 2027. It features augmented-reality storefront windows and murals. Opening hours vary by participating storefront; check the official event information.",
+      "howToClaim": "Walk along participating Dundas Street West locations; check the event's map and instructions.",
+      "sourceUrl": "https://www.wtftoronto.com/deals/?type=activations"
+    },
+    {
+      "title": "Anga's Winter Market — Free Santa Photos and Face Painting",
+      "slug": "angas-winter-market-december-5-2026",
+      "type": "event",
+      "tags": [
+        "free",
+        "holiday",
+        "market",
+        "family-friendly"
+      ],
+      "locations": [
+        "angas-farm-nursery"
+      ],
+      "summary": "Free admission, DIY Santa photos and face painting at Anga's Winter Market on December 5.",
+      "startDate": "2026-12-05T00:00:00-05:00",
+      "endDate": "2026-12-05T23:59:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "Anga's Farm & Nursery hosts a Winter Market December 5, 2026, featuring free Santa photos and face painting alongside vendors and optional paid activities. Exact operating hours need confirmation before publishing.",
+      "restrictions": "Market purchases, food and optional workshops cost extra. Confirm hours with organizer.",
+      "sourceUrl": "https://www.wtftoronto.com/deals/?type=activations"
+    },
+    {
+      "title": "St. Lawrence Winter Market — Free Ferris Wheel Rides",
+      "slug": "st-lawrence-winter-market-ferris-wheel-2026",
+      "type": "freebie",
+      "tags": [
+        "free",
+        "holiday",
+        "family-friendly",
+        "outdoor"
+      ],
+      "locations": [
+        "st-lawrence-market"
+      ],
+      "summary": "Free Ferris wheel rides at the St. Lawrence Winter Market, November 20–22.",
+      "startDate": "2026-11-20T00:00:00-05:00",
+      "endDate": "2026-11-22T23:59:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "The St. Lawrence Winter Market programme includes free Ferris wheel rides November 20–22, 2026. Exact daily operating hours and capacity limits should be confirmed before publishing.",
+      "restrictions": "Subject to operating hours, weather and capacity. Check organizer updates.",
+      "sourceUrl": "https://www.stlawrencemarket.com/"
+    },
+    {
+      "title": "ROM Third Tuesday Nights Free — November 17",
+      "slug": "rom-third-tuesday-free-november-17-2026",
+      "type": "freebie",
+      "tags": [
+        "free",
+        "museum",
+        "art-culture"
+      ],
+      "locations": [
+        "royal-ontario-museum"
+      ],
+      "summary": "Free evening admission to most ROM galleries on November 17; advance ticket required.",
+      "startDate": "2026-11-17T16:30:00-05:00",
+      "endDate": "2026-11-17T20:30:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "tickets",
+      "description": "The Royal Ontario Museum's Third Tuesday Nights Free programme offers free admission to most galleries on November 17, 2026, from 4:30 to 8:30 p.m. Advance free tickets are required.",
+      "howToClaim": "Reserve a free ticket through ROM before attending.",
+      "restrictions": "Special exhibitions may cost extra; walk-in access is not guaranteed.",
+      "sourceUrl": "https://www.rom.on.ca/"
+    },
+    {
+      "title": "ROM Third Tuesday Nights Free — December 15",
+      "slug": "rom-third-tuesday-free-december-15-2026",
+      "type": "freebie",
+      "tags": [
+        "free",
+        "museum",
+        "art-culture"
+      ],
+      "locations": [
+        "royal-ontario-museum"
+      ],
+      "summary": "Free evening admission to most ROM galleries on December 15; advance ticket required.",
+      "startDate": "2026-12-15T16:30:00-05:00",
+      "endDate": "2026-12-15T20:30:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "tickets",
+      "description": "ROM's recurring Third Tuesday Nights Free programme includes December 15, 2026, from 4:30 to 8:30 p.m. Confirm the December booking window and availability on ROM's official website.",
+      "howToClaim": "Check ROM's ticket booking page and reserve a free ticket.",
+      "restrictions": "Advance booking required; special exhibitions may cost extra.",
+      "sourceUrl": "https://www.rom.on.ca/"
+    }
+  ]
+}

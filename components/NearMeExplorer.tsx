@@ -2,6 +2,7 @@
 
 import {useMemo, useState} from 'react'
 import Link from 'next/link'
+import NearMeMap from './NearMeMap'
 
 type Venue = {name?: string; address?: string; city?: string; neighbourhood?: string; lat?: number; lng?: number}
 export type NearbyFind = {
@@ -33,11 +34,6 @@ function distanceKm(a: Point, b: Point) {
   const h = Math.sin(dLat/2)**2 + Math.cos(radians(a.lat))*Math.cos(radians(b.lat))*Math.sin(dLng/2)**2
   return 6371 * 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1-h))
 }
-function osmEmbed(point: Point) {
-  const dx = 0.018, dy = 0.012
-  const bbox = [point.lng-dx,point.lat-dy,point.lng+dx,point.lat+dy].join(',')
-  return 'https://www.openstreetmap.org/export/embed.html?bbox='+encodeURIComponent(bbox)+'&layer=mapnik&marker='+encodeURIComponent(point.lat+','+point.lng)
-}
 export default function NearMeExplorer({finds}: {finds: NearbyFind[]}) {
   const [origin, setOrigin] = useState<Point>(presets['Downtown Toronto'])
   const [area, setArea] = useState('Downtown Toronto')
@@ -61,8 +57,7 @@ export default function NearMeExplorer({finds}: {finds: NearbyFind[]}) {
   },[finds,origin,radius,category])
 
   const active = matches.find(m=>m.key===selected) || matches[0]
-  const mapPoint = active && typeof active.venue.lat==='number' && typeof active.venue.lng==='number'
-    ? {lat:active.venue.lat,lng:active.venue.lng} : origin
+  const markers = useMemo(() => matches.map(m => ({key:m.key,lat:m.venue.lat!,lng:m.venue.lng!,title:m.find.title,category:m.find.type||''})),[matches])
 
   function locate() {
     if (!navigator.geolocation) {setStatus('Your browser does not support location access. Choose an area instead.');return}
@@ -117,14 +112,14 @@ export default function NearMeExplorer({finds}: {finds: NearbyFind[]}) {
           </section>
           <section aria-label="Map" className="min-w-0">
             <div className="overflow-hidden rounded-2xl border border-black/10 bg-white">
-              <iframe key={mapPoint.lat+':'+mapPoint.lng} title="OpenStreetMap showing selected nearby Find" src={osmEmbed(mapPoint)} loading="lazy" referrerPolicy="no-referrer" className="h-[420px] w-full border-0" />
+              <NearMeMap markers={markers} center={origin} selectedKey={active?.key||null} onSelect={setSelected} />
               <div className="p-4">
                 <p className="text-sm font-semibold">{active ? active.find.title : 'Map centred on '+area}</p>
                 <p className="mt-1 text-xs text-black/60">{active ? [active.venue.address,active.venue.city].filter(Boolean).join(', ') : 'Select a nearby Find to see its location.'}</p>
-                <a href={'https://www.openstreetmap.org/?mlat='+mapPoint.lat+'&mlon='+mapPoint.lng+'#map=15/'+mapPoint.lat+'/'+mapPoint.lng} target="_blank" rel="noopener noreferrer" className="mt-2 inline-block text-sm font-semibold underline">Open larger map</a>
+
               </div>
             </div>
-            <p className="mt-2 text-xs text-black/50">Map © OpenStreetMap contributors. Select a result to move the map pin.</p>
+            <p className="mt-2 text-xs text-black/50">Map data © OpenStreetMap contributors. Tap any map marker to select a Find.</p>
           </section>
         </div>
       </div>

@@ -56,7 +56,7 @@ const client = createClient({
   perspective: 'raw',
 })
 
-const jsonPath = path.join(root, 'data', 'finds.json')
+const jsonPath = path.resolve(root, process.argv[2] || 'data/finds.json')
 
 const input = JSON.parse(
   fs.readFileSync(jsonPath, 'utf8')

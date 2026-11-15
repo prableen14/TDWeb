@@ -42,7 +42,7 @@ const client = createClient({
 })
 
 const {venues} = JSON.parse(
-  fs.readFileSync(path.join(root, 'data', 'venues.json'), 'utf8')
+  fs.readFileSync(path.resolve(root, process.argv[2] || 'data/venues.json'), 'utf8')
 )
 
 if (!Array.isArray(venues)) {

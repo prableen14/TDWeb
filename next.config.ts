@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
   experimental: {
     agentFeedback: true,
   },
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Sanity pages currently use uncached async fetches. Keep Cache Components
+  // disabled until those routes are migrated to Suspense or explicit caching.
   turbopack: {
     rules: {
       "*.css": {

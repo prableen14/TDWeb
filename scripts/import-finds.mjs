@@ -172,9 +172,9 @@ for (const find of input.finds) {
         venueSlug
       )
 
-      if (!venueId) {
+      if (!venueId || venueId.startsWith('drafts.')) {
         throw new Error(
-          `Venue not found: ${venueSlug}`
+          `Venue must be published before importing Find: ${venueSlug}`
         )
       }
 

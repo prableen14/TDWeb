@@ -2,7 +2,7 @@ import Link from 'next/link'
 import FindCard, {type FindCardData} from '@/components/FindCard'
 import {sanityClient} from '@/sanity/lib/sanity'
 
-const query = `*[_type == "find" && defined(slug.current) && (
+const query = `*[_type == "find" && defined(slug.current) && (!defined(endDate) || dateTime(endDate) >= dateTime(now())) && (
   title match $term || summary match $term || pt::text(description) match $term ||
   brand->name match $term || type match $term
 )] | order(_createdAt desc)[0...60] {

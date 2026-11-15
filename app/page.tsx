@@ -26,7 +26,8 @@ const categories = [
 
 const findsQuery = `*[
   _type == "find" &&
-  defined(slug.current)
+  defined(slug.current) &&
+  (!defined(endDate) || dateTime(endDate) >= dateTime(now()))
 ] | order(_createdAt desc)[0...12] {
   _id,
   title,

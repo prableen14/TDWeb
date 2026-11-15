@@ -121,6 +121,7 @@ export default async function FindDetailPage({params}: {params: Promise<{slug: s
   const find = await getFind(slug)
   if (!find) notFound()
 
+  const expired = Boolean(find.endDate && new Date(find.endDate).getTime() < Date.now())
   const categoryName = categoryNames[find.type || ''] || 'Finds'
   const categoryPath = categoryPaths[find.type || ''] || '/'
   const isFree = find.isFree || find.admissionType === 'free'
@@ -135,9 +136,16 @@ export default async function FindDetailPage({params}: {params: Promise<{slug: s
           <Link href={categoryPath} className="hover:underline">{categoryName}</Link>
         </nav>
 
+        {expired && (
+          <div role="status" className="mb-8 rounded-2xl border border-amber-300 bg-amber-50 p-5 text-amber-950">
+            <p className="text-lg font-bold">This offer or event has ended</p>
+            <p className="mt-2 text-sm">This listing is no longer active. The details below are kept for reference. <Link href="/finds" className="font-semibold underline">Explore current Toronto deals and events</Link>.</p>
+          </div>
+        )}
         <div className="mb-6 flex flex-wrap gap-2">
           <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold ring-1 ring-black/10">{categoryName}</span>
-          {isFree && <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-800">FREE</span>}
+          {expired && <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-900">EXPIRED</span>}
+          {isFree && !expired && <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-800">FREE</span>}
           {find.tags?.map((tag) => <span key={tag} className="rounded-full bg-white px-3 py-1 text-xs text-black/65 ring-1 ring-black/10">{tag.replaceAll('-', ' ')}</span>)}
         </div>
 

@@ -115,11 +115,22 @@ export default function ForBrandsPage() {
               <a href="#our-work" className="rounded-full border border-[#ffc400] px-7 py-3 font-bold hover:bg-white/10">Explore our work</a>
             </div>
           </div>
-          <div className="rounded-3xl border border-[#ffc400]/25 bg-gradient-to-br from-[#1b1b1b] to-[#0d0d0d] p-10 shadow-2xl">
-            <p className="text-xs font-bold uppercase tracking-widest text-[#ffc400]">Toronto Discounts</p>
-            <p className="mt-7 text-4xl font-extrabold leading-tight">Local stories. Real experiences. Shareable discoveries.</p>
-            <p className="mt-6 text-white/60">Restaurants · Events · Retail · Experiences</p>
-            <a href="https://www.instagram.com/torontodiscounts/" target="_blank" rel="noopener noreferrer" className="mt-8 inline-block text-sm font-bold text-[#ffc400] underline underline-offset-4">Visit @torontodiscounts</a>
+          {/* Hero image: add your own photo to public/brands-hero.jpg to replace the placeholder.
+              The dark overlay keeps the caption readable on top of any photo. */}
+          <div
+            className="relative isolate flex min-h-[390px] overflow-hidden rounded-[2rem] border border-[#ffc400]/35 bg-[#130c06] shadow-2xl sm:min-h-[470px] lg:min-h-[530px]"
+            style={{
+              backgroundImage: "linear-gradient(180deg, rgba(0,0,0,.10) 0%, rgba(0,0,0,.22) 40%, rgba(0,0,0,.90) 100%), url('/brands-hero.jpg'), radial-gradient(circle at 50% 35%, #603000 0%, #1c1107 50%, #080808 85%)",
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
+            <div className="absolute inset-3 rounded-[1.6rem] border border-[#ffc400]/40 sm:inset-4" aria-hidden="true" />
+            <div className="relative z-10 mt-auto px-7 pb-9 pt-24 sm:px-10 sm:pb-12">
+              <p className="text-xs font-extrabold uppercase tracking-[.12em] text-[#ffc400]">@torontodiscounts</p>
+              <p className="mt-4 max-w-lg text-3xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-4xl lg:text-5xl">Discover what’s happening in Toronto.</p>
+            </div>
           </div>
         </div>
       </section>

@@ -7,7 +7,7 @@ import NearMeMap from './NearMeMap'
 type Venue = {name?: string; address?: string; city?: string; neighbourhood?: string; lat?: number; lng?: number}
 export type NearbyFind = {
   _id: string; title: string; slug: string; type?: string; summary?: string
-  isFree?: boolean; price?: string; startDate?: string; endDate?: string; venues?: Venue[]
+  isFree?: boolean; price?: string; startDate?: string; endDate?: string; imageUrl?: string; imageAlt?: string; venues?: (Venue | null)[]
 }
 type Point = {lat: number; lng: number}
 type Match = {find: NearbyFind; venue: Venue; distance: number; key: string}
@@ -48,7 +48,7 @@ export default function NearMeExplorer({finds}: {finds: NearbyFind[]}) {
     for (const find of finds) {
       if (category !== 'all' && find.type !== category) continue
       for (const [index,venue] of (find.venues || []).entries()) {
-        if (typeof venue.lat !== 'number' || typeof venue.lng !== 'number') continue
+        if (!venue || typeof venue.lat !== 'number' || typeof venue.lng !== 'number') continue
         const distance = distanceKm(origin,{lat:venue.lat,lng:venue.lng})
         if (distance <= radius) rows.push({find,venue,distance,key:find._id+':'+index})
       }
@@ -103,7 +103,7 @@ export default function NearMeExplorer({finds}: {finds: NearbyFind[]}) {
               <div className="max-h-[640px] space-y-3 overflow-y-auto pr-1">
                 {matches.map(match=><div key={match.key} className={'w-full rounded-2xl border bg-white p-5 text-left transition hover:border-black/50 '+(active?.key===match.key?'border-black shadow-sm':'border-black/10')}>
                   <div className="flex justify-between gap-3"><span className="text-xs font-bold uppercase tracking-wider text-black/50">{categoryLabels[match.find.type||'']||'Find'}</span><span className="text-sm font-semibold">{match.distance.toFixed(1)} km</span></div>
-                  <h3 className="mt-2 text-lg font-bold">{match.find.title}</h3>
+                  {match.find.imageUrl && <img src={match.find.imageUrl} alt={match.find.imageAlt || match.find.title} loading="lazy" className="mt-3 h-36 w-full rounded-lg object-cover" />}<h3 className="mt-2 text-lg font-bold">{match.find.title}</h3>
                   <p className="mt-1 text-sm text-black/60">{[match.venue.name,match.venue.neighbourhood,match.venue.city].filter(Boolean).join(' · ')}</p>
                   {match.find.summary && <p className="mt-2 line-clamp-2 text-sm text-black/65">{match.find.summary}</p>}
                   <Link href={'/finds/'+encodeURIComponent(match.find.slug)} className="mt-3 inline-block text-sm font-bold underline">View details</Link><button type="button" onClick={()=>setSelected(match.key)} className="ml-4 text-sm font-bold underline">Show on map</button>

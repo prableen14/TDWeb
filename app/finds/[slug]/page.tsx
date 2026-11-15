@@ -21,7 +21,7 @@ type Find = {
   imageUrl?: string
   imageAlt?: string
   brand?: string
-  locations?: Venue[]
+  locations?: (Venue | null)[]
   howToClaim?: string
   restrictions?: string
   sourceUrl?: string
@@ -178,11 +178,11 @@ export default async function FindDetailPage({params}: {params: Promise<{slug: s
               </section>
             )}
 
-            {find.locations && find.locations.length > 0 && (
+            {find.locations?.some((venue) => venue != null) && (
               <section>
-                <h2 className="mb-4 text-2xl font-bold">Location{find.locations.length > 1 ? 's' : ''}</h2>
+                <h2 className="mb-4 text-2xl font-bold">Location{find.locations.filter((venue) => venue != null).length > 1 ? 's' : ''}</h2>
                 <div className="space-y-3">
-                  {find.locations.map((venue, index) => (
+                  {find.locations.filter((venue): venue is Venue => venue != null).map((venue, index) => (
                     <div key={index} className="rounded-2xl border border-black/10 bg-white p-5">
                       <h3 className="font-semibold">{venue.name || 'Venue'}</h3>
                       <p className="mt-1 text-sm text-black/60">

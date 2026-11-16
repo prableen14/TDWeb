@@ -153,17 +153,14 @@ export default async function FindDetailPage({params}: {params: Promise<{slug: s
           {find.tags?.map((tag) => <span key={tag} className="rounded-full bg-white px-3 py-1 text-xs text-black/65 ring-1 ring-black/10">{tag.replaceAll('-', ' ')}</span>)}
         </div>
 
-        <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">{find.title}</h1>
-        {find.brand && (
-          <div className="mt-3 flex items-center gap-3">
-            {find.brandLogoUrl && (
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-black/10 bg-white p-1.5">
-                <img src={find.brandLogoUrl} alt={`${find.brand} logo`} className="h-full w-full object-contain" />
-              </div>
-            )}
-            <p className="text-sm font-semibold text-black/55">By {find.brand}</p>
-          </div>
-        )}
+        <div className="flex items-start justify-between gap-5">
+          <h1 className="min-w-0 max-w-4xl flex-1 text-4xl font-bold tracking-tight md:text-6xl">{find.title}</h1>
+          {find.brandLogoUrl && find.brand && (
+            <div className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-black/10 bg-white p-2 shadow-sm sm:h-20 sm:w-20" title={find.brand}>
+              <img src={find.brandLogoUrl} alt={`${find.brand} logo`} className="h-full w-full object-contain" />
+            </div>
+          )}
+        </div>
         {find.summary && <p className="mt-6 max-w-3xl text-lg leading-8 text-black/65">{find.summary}</p>}
 
         <div className="mt-10 overflow-hidden rounded-3xl bg-neutral-100">

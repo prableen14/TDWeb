@@ -13,6 +13,8 @@ type Find = {
   startDate?: string
   imageUrl?: string
   imageAlt?: string
+  brandLogoUrl?: string
+  brandName?: string
   venue?: string
 }
 
@@ -37,6 +39,8 @@ const findsQuery = `*[
   isFree,
   price,
   startDate,
+  "brandLogoUrl": brand->logo.asset->url,
+  "brandName": brand->name,
   "imageUrl": coalesce(image.asset->url, brand->image.asset->url, locations[0]->image.asset->url),
   "imageAlt": select(defined(image.asset) => image.alt, defined(brand->image.asset) => brand->image.alt, defined(locations[0]->image.asset) => locations[0]->image.alt, null),
   "venue": locations[0]->name
@@ -176,6 +180,11 @@ export default async function Home() {
                         : find.type === 'pop-up'
                         ? '🎪'
                         : '✨'}
+                    </div>
+                  )}
+                  {find.brandLogoUrl && (
+                    <div className="absolute right-3 top-3 flex h-14 w-14 items-center justify-center rounded-xl border border-black/10 bg-white p-2 shadow-md sm:h-16 sm:w-16">
+                      <img src={find.brandLogoUrl} alt={`${find.brandName || "Brand"} logo`} className="h-full w-full object-contain" />
                     </div>
                   )}
                 </div>

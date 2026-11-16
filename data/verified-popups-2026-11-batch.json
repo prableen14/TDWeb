@@ -1,0 +1,89 @@
+{
+  "finds": [
+    {
+      "title": "Core Power Protein Sampling at Union Station — November 18–19",
+      "slug": "core-power-union-station-sampling-november-18-19-2026",
+      "type": "pop-up",
+      "tags": [
+        "pop-up",
+        "giveaway",
+        "free"
+      ],
+      "locations": [],
+      "summary": "Visit the Core Power by fairlife sampling activation at Union Station's York Kiosk on November 18–19, noon–8 PM. Samples subject to availability.",
+      "startDate": "2026-11-18T12:00:00-05:00",
+      "endDate": "2026-11-19T20:00:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "Union Station's official event calendar lists Core Power Protein sampling at the York Kiosk on November 18 and 19, 2026, from noon to 8 PM each day. Sampling is operated independently by the brand or its agency.",
+      "howToClaim": "Visit the York Kiosk inside Union Station during the scheduled sampling hours. Ask staff about available samples.",
+      "restrictions": "Sampling is not guaranteed. Product formats, flavours, quantities, eligibility and limits are determined by the operator; supplies may run out early. This listing covers November 18–19 only.",
+      "sourceUrl": "https://torontounion.ca/toronto-union-events/list/?tribe-bar-date=2026-11-01"
+    },
+    {
+      "title": "Burger King Whopper Swap Pop-Up at STACKT",
+      "slug": "burger-king-whopper-swap-stackt-november-26-2026",
+      "type": "pop-up",
+      "tags": [
+        "pop-up",
+        "food-drinks",
+        "limited-time"
+      ],
+      "locations": [],
+      "summary": "Visit Burger King's Whopper Swap truck at STACKT on November 26 from noon for activities and a Whopper coupon opportunity.",
+      "startDate": "2026-11-26T12:00:00-05:00",
+      "endDate": "2026-11-26T23:59:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "STACKT's official calendar lists a free-to-enter Burger King promotional truck on the West Lawn on November 26, 2026, starting at noon. Visitors can take part in activities and pick up a Whopper coupon to use in store.",
+      "howToClaim": "Visit STACKT Market's West Lawn from noon on November 26 and ask the promotional team about coupon availability.",
+      "restrictions": "A free burger is NOT confirmed. Coupon value, eligibility, redemption terms and closing time have not been published. End date is a date-only placeholder, not a confirmed closing hour.",
+      "sourceUrl": "https://stacktmarket.com/events/"
+    },
+    {
+      "title": "Blue Mountain Resort Winter Pop-Up at STACKT",
+      "slug": "blue-mountain-resort-stackt-pop-up-november-28-2026",
+      "type": "pop-up",
+      "tags": [
+        "pop-up",
+        "holiday",
+        "giveaway"
+      ],
+      "locations": [],
+      "summary": "Free Blue Mountain Resort winter activation at STACKT on November 28 from 11 AM, with photo opportunities and advertised swag.",
+      "startDate": "2026-11-28T11:00:00-05:00",
+      "endDate": "2026-11-28T23:59:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "walk-in",
+      "description": "STACKT's official events calendar lists Blue Mountain Resort's free winter-themed pop-up at the Lookout area on November 28, 2026, beginning at 11 AM. The activation advertises a chalet photo opportunity and swag.",
+      "howToClaim": "Visit the Lookout at STACKT Market starting at 11 AM on November 28.",
+      "restrictions": "Swag availability, quantities and eligibility are not published or guaranteed. The event closing time is not confirmed; 11:59 PM is a date-only expiry placeholder, not the advertised operating time.",
+      "sourceUrl": "https://stacktmarket.com/events/"
+    },
+    {
+      "title": "Kreate Market Holiday Market at STACKT — November 21–22",
+      "slug": "kreate-holiday-market-stackt-november-21-22-2026",
+      "type": "event",
+      "tags": [
+        "pop-up",
+        "market",
+        "holiday",
+        "shopping"
+      ],
+      "locations": [],
+      "summary": "Free-admission holiday market at STACKT November 21–22, noon–8 PM daily, featuring local makers and seasonal shopping.",
+      "startDate": "2026-11-21T12:00:00-05:00",
+      "endDate": "2026-11-22T20:00:00-05:00",
+      "isFree": true,
+      "admissionType": "free",
+      "bookingType": "rsvp",
+      "description": "Kreate Market's event listing advertises a free-admission indoor holiday market at STACKT Market, 28 Bathurst Street, on November 21–22, 2026, noon–8 PM both days. Browse independent vendors, handmade goods and seasonal items.",
+      "howToClaim": "Check the organizer's free Eventbrite registration page before visiting. Admission is advertised as free.",
+      "restrictions": "Shopping, food and merchandise purchases cost extra. Registration is advertised by the organizer; confirm entry requirements and availability on the ticket page. Event organizers may photograph or film visitors.",
+      "sourceUrl": "https://www.eventbrite.ca/e/kreate-market-holiday-market-stackt-market-tickets-1992595096573"
+    }
+  ]
+}

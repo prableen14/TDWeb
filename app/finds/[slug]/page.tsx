@@ -21,6 +21,7 @@ type Find = {
   imageUrl?: string
   imageAlt?: string
   brand?: string
+  brandLogoUrl?: string
   locations?: (Venue | null)[]
   howToClaim?: string
   restrictions?: string
@@ -43,6 +44,7 @@ const findQuery = `*[_type == "find" && slug.current == $slug][0] {
   "imageUrl": coalesce(image.asset->url, brand->image.asset->url, locations[0]->image.asset->url),
   "imageAlt": select(defined(image.asset) => image.alt, defined(brand->image.asset) => brand->image.alt, defined(locations[0]->image.asset) => locations[0]->image.alt, null),
   "brand": brand->name,
+  "brandLogoUrl": brand->logo.asset->url,
   "locations": locations[]->{name, address, neighbourhood, city, province},
   howToClaim,
   restrictions,
@@ -152,7 +154,16 @@ export default async function FindDetailPage({params}: {params: Promise<{slug: s
         </div>
 
         <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">{find.title}</h1>
-        {find.brand && <p className="mt-3 text-sm font-semibold text-black/55">By {find.brand}</p>}
+        {find.brand && (
+          <div className="mt-3 flex items-center gap-3">
+            {find.brandLogoUrl && (
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-black/10 bg-white p-1.5">
+                <img src={find.brandLogoUrl} alt={`${find.brand} logo`} className="h-full w-full object-contain" />
+              </div>
+            )}
+            <p className="text-sm font-semibold text-black/55">By {find.brand}</p>
+          </div>
+        )}
         {find.summary && <p className="mt-6 max-w-3xl text-lg leading-8 text-black/65">{find.summary}</p>}
 
         <div className="mt-10 overflow-hidden rounded-3xl bg-neutral-100">
